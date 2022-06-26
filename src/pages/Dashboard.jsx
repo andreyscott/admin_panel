@@ -50,13 +50,16 @@ function Dashboard() {
               <DashboardAvatars />
 
               {/* Right: Actions */}
-              <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
+              <div className="grid grid-flow-col sm:auto-cols-max justify-evenly m-2 items-center sm:justify-end gap-4">
                 {/* Filter button */}
+                <div className='mb-3'>
                 <FilterButton />
+                
+                </div>
                 {/* Datepicker built with flatpickr */}
                 <Datepicker />
                 {/* Add view button */}
-                <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
+                <button className="btn bg-primary hover:bg-indigo-600 p-3 text-white">
                     <svg className="w-4 h-4 fill-current opacity-50 shrink-0" viewBox="0 0 16 16">
                         <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
                     </svg>
@@ -69,11 +72,11 @@ function Dashboard() {
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
 
-              {/* Line chart (Acme Plus) */}
+              {/* Line chart (Trigan Plus) */}
               <DashboardCard01 />
-              {/* Line chart (Acme Advanced) */}
+              {/* Line chart (Trigan Advanced) */}
               <DashboardCard02 />
-              {/* Line chart (Acme Professional) */}
+              {/* Line chart (Trigan Professional) */}
               <DashboardCard03 />
               {/* Bar chart (Direct vs Indirect) */}
               <DashboardCard04 />
