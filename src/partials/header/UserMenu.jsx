@@ -90,12 +90,30 @@ function UserMenu() {
             <li>
               <Link
                 className="font-medium text-sm text-primary hover:text-indigo-600 flex items-center py-1 px-3"
+                to="/login"
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+              >
+Login
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="font-medium text-sm text-primary hover:text-indigo-600 flex items-center py-1 px-3"
+                to="/auth/register"
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+              >
+                Register
+              </Link>
+            </li>
+            {/* <li>
+              <Link
+                className="font-medium text-sm text-primary hover:text-indigo-600 flex items-center py-1 px-3"
                 to="/"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
                 Sign Out
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </Transition>

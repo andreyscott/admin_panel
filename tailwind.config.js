@@ -6,7 +6,17 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    backdropFilter: {
+      'none': 'none',
+      'blur': 'blur(20px)',
+    },
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('assets/img/back.png')",
+        // 'footer-texture': "url('/img/footer-texture.png')",
+      },
+
+
       
       colors: {
         special: '#032174',
@@ -67,6 +77,8 @@ module.exports = {
     },
   },
   plugins: [
+    //glass morphisms
+    require('tailwindcss-filters'),
     // eslint-disable-next-line global-require
     require('@tailwindcss/forms'),
     // add custom variant for expanding sidebar
