@@ -1,5 +1,8 @@
 import React from 'react';
-import Flatpickr from 'react-flatpickr';
+
+import "flatpickr/dist/themes/material_blue.css";
+
+import Flatpickr from "react-flatpickr";
 
 function Datepicker() {
 
