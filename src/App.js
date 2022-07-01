@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard';
 import Profile from './pages/Profile';
 import Register from './pages/Registration';
 import Login from './pages/Login';
+import Map from './pages/Maps';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 
         <Route path="/profile" element={<Profile /> } />
         <Route path="/login" element={<Login /> } />
+        <Route path="/map" element={<Map /> } />
          <Route path="/auth/register" element={<Register /> } />
 
 
